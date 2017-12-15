@@ -18,7 +18,8 @@
 		8EB74BE01FE3728F0051259E /* SlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB74BDF1FE3728F0051259E /* SlideMenuViewController.m */; };
 		8EB74BE41FE377AB0051259E /* ViewController+SlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB74BE31FE377AB0051259E /* ViewController+SlideMenuViewController.m */; };
 		8EB74BEA1FE378F10051259E /* SlideMenuManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB74BE91FE378F10051259E /* SlideMenuManger.m */; };
-		8EB74BED1FE37A500051259E /* UIView+SnapshotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB74BEC1FE37A500051259E /* UIView+SnapshotView.m */; };
+		8EB74C411FE39AE30051259E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB74C401FE39AE30051259E /* LeftViewController.m */; };
+		8EB74C441FE3A8390051259E /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB74C431FE3A8390051259E /* RightViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +62,10 @@
 		8EB74BE31FE377AB0051259E /* ViewController+SlideMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+SlideMenuViewController.m"; sourceTree = "<group>"; };
 		8EB74BE81FE378F10051259E /* SlideMenuManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenuManger.h; sourceTree = "<group>"; };
 		8EB74BE91FE378F10051259E /* SlideMenuManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideMenuManger.m; sourceTree = "<group>"; };
-		8EB74BEB1FE37A500051259E /* UIView+SnapshotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SnapshotView.h"; sourceTree = "<group>"; };
-		8EB74BEC1FE37A500051259E /* UIView+SnapshotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SnapshotView.m"; sourceTree = "<group>"; };
+		8EB74C3F1FE39AE30051259E /* LeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		8EB74C401FE39AE30051259E /* LeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		8EB74C421FE3A8390051259E /* RightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		8EB74C431FE3A8390051259E /* RightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +117,14 @@
 			isa = PBXGroup;
 			children = (
 				8EB74BE11FE372E50051259E /* SlideMenuManger */,
-				8EB74BDD1FE372640051259E /* SlideMenuViewTool */,
 				8EB74BAA1FE372480051259E /* AppDelegate.h */,
 				8EB74BAB1FE372480051259E /* AppDelegate.m */,
 				8EB74BAD1FE372480051259E /* ViewController.h */,
 				8EB74BAE1FE372480051259E /* ViewController.m */,
+				8EB74C3F1FE39AE30051259E /* LeftViewController.h */,
+				8EB74C401FE39AE30051259E /* LeftViewController.m */,
+				8EB74C421FE3A8390051259E /* RightViewController.h */,
+				8EB74C431FE3A8390051259E /* RightViewController.m */,
 				8EB74BB01FE372480051259E /* Main.storyboard */,
 				8EB74BB31FE372480051259E /* Assets.xcassets */,
 				8EB74BB51FE372480051259E /* LaunchScreen.storyboard */,
@@ -160,10 +166,9 @@
 		8EB74BE11FE372E50051259E /* SlideMenuManger */ = {
 			isa = PBXGroup;
 			children = (
-				8EB74BEB1FE37A500051259E /* UIView+SnapshotView.h */,
-				8EB74BEC1FE37A500051259E /* UIView+SnapshotView.m */,
 				8EB74BE81FE378F10051259E /* SlideMenuManger.h */,
 				8EB74BE91FE378F10051259E /* SlideMenuManger.m */,
+				8EB74BDD1FE372640051259E /* SlideMenuViewTool */,
 			);
 			path = SlideMenuManger;
 			sourceTree = "<group>";
@@ -301,10 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB74BED1FE37A500051259E /* UIView+SnapshotView.m in Sources */,
+				8EB74C411FE39AE30051259E /* LeftViewController.m in Sources */,
 				8EB74BE41FE377AB0051259E /* ViewController+SlideMenuViewController.m in Sources */,
 				8EB74BAF1FE372480051259E /* ViewController.m in Sources */,
 				8EB74BE01FE3728F0051259E /* SlideMenuViewController.m in Sources */,
+				8EB74C441FE3A8390051259E /* RightViewController.m in Sources */,
 				8EB74BBA1FE372480051259E /* main.m in Sources */,
 				8EB74BEA1FE378F10051259E /* SlideMenuManger.m in Sources */,
 				8EB74BAC1FE372480051259E /* AppDelegate.m in Sources */,

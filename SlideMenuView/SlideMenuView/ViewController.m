@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SlideMenuViewController.h"
+#import "SlideMenuManger.h"
 
 @interface ViewController ()
 
@@ -18,33 +19,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
     
     self.title = @"消息";
     
     //左
-    UIButton *headerButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
+    UIButton *headerButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 100, 50, 50)];
     headerButton.layer.cornerRadius = headerButton.bounds.size.width/2.0f;
     headerButton.layer.masksToBounds = true;
-    [headerButton setImage:[UIImage imageNamed:@"header"] forState:UIControlStateNormal];
+    [headerButton setImage:[UIImage imageNamed:@"emoji-1"] forState:UIControlStateNormal];
     [headerButton addTarget:self action:@selector(showLeft) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:headerButton];
+    [self.view addSubview:headerButton];
     
     //右
-    UIButton *moreButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
-    [moreButton setImage:[UIImage imageNamed:@"more"] forState:UIControlStateNormal];
+    UIButton *moreButton = [[UIButton alloc] initWithFrame:CGRectMake(250, 100, 50, 50)];
+    [moreButton setImage:[UIImage imageNamed:@"emoji-2"] forState:UIControlStateNormal];
     [moreButton addTarget:self action:@selector(showRight) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:moreButton];
+    [self.view addSubview:moreButton];
 }
 
 -(void)showLeft{
-    SlideMenuViewController *vc = (SlideMenuViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [vc showLeftViewControllerAnimated:YES];
+    [[SlideMenuManger sharedInstance]showLeftView];
+//    SlideMenuViewController *vc = (SlideMenuViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+//    [vc showLeftViewControllerAnimated:YES];
 }
 
 -(void)showRight{
-    SlideMenuViewController *vc = (SlideMenuViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [vc showRightViewControllerAnimated:YES];
+     [[SlideMenuManger sharedInstance]showRightView];
+//    SlideMenuViewController *vc = (SlideMenuViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+//    [vc showRightViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

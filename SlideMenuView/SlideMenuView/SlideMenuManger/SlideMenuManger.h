@@ -8,30 +8,32 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface SlideMenuManger : NSObject
 
+typedef NS_ENUM(NSUInteger, SlideMenuMangerType) {
+    SlideMenuMangerSideType = 0 ,//边缘
+    SlideMenuMangerCenterType  = 1,//中心
+};
+
+@interface SlideMenuManger : NSObject
 /**
  *  单例
- *
  *  @return 对象
  */
 + (instancetype) sharedInstance;
 
--(void)addRootView:(UIViewController *)centerViewController leftViewController:(UIViewController *)leftViewController;
+-(void)addRootView:(UIViewController *)centerViewController   leftViewController:(UIViewController *)leftViewController rightViewController:(UIViewController *)rightViewController
+               slideDis:(CGFloat)slideDis
+         animationType:(SlideMenuMangerType)animationType;
 
--(void)pushToOtherView;
-
--(void)pushBackView;
-//从首页跳页
--(void)homePush;
-//从侧滑页跳页
--(void)otherPush;
-//侧滑页是否显示
--(void)showLeft;
 //点击侧滑
--(void)slideView;
-//侧滑页进入返回首页
--(void)complete;
+-(void)showLeftView;
 
+-(void)showRightView;
+//显示主视图
+-(void)showRootViewControllerAnimated:(BOOL)animated;
+//显示左侧菜单
+-(void)showLeftViewControllerAnimated:(BOOL)animated;
+//显示右侧菜单
+-(void)showRightViewControllerAnimated:(BOOL)animated;
 
 @end
