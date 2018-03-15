@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E4CE01C1FE916F400EABB0B /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CE01B1FE916F400EABB0B /* NextViewController.m */; };
 		8EB74BAC1FE372480051259E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB74BAB1FE372480051259E /* AppDelegate.m */; };
 		8EB74BAF1FE372480051259E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB74BAE1FE372480051259E /* ViewController.m */; };
 		8EB74BB21FE372480051259E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB74BB01FE372480051259E /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E4CE01A1FE916F400EABB0B /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		8E4CE01B1FE916F400EABB0B /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		8EB74BA71FE372480051259E /* SlideMenuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB74BAA1FE372480051259E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EB74BAB1FE372480051259E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,9 +119,12 @@
 		8EB74BA91FE372480051259E /* SlideMenuView */ = {
 			isa = PBXGroup;
 			children = (
+				8EB74BDD1FE372640051259E /* SlideMenuViewTool */,
 				8EB74BE11FE372E50051259E /* SlideMenuManger */,
 				8EB74BAA1FE372480051259E /* AppDelegate.h */,
 				8EB74BAB1FE372480051259E /* AppDelegate.m */,
+				8E4CE01A1FE916F400EABB0B /* NextViewController.h */,
+				8E4CE01B1FE916F400EABB0B /* NextViewController.m */,
 				8EB74BAD1FE372480051259E /* ViewController.h */,
 				8EB74BAE1FE372480051259E /* ViewController.m */,
 				8EB74C3F1FE39AE30051259E /* LeftViewController.h */,
@@ -168,7 +174,6 @@
 			children = (
 				8EB74BE81FE378F10051259E /* SlideMenuManger.h */,
 				8EB74BE91FE378F10051259E /* SlideMenuManger.m */,
-				8EB74BDD1FE372640051259E /* SlideMenuViewTool */,
 			);
 			path = SlideMenuManger;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB74C411FE39AE30051259E /* LeftViewController.m in Sources */,
+				8E4CE01C1FE916F400EABB0B /* NextViewController.m in Sources */,
 				8EB74BE41FE377AB0051259E /* ViewController+SlideMenuViewController.m in Sources */,
 				8EB74BAF1FE372480051259E /* ViewController.m in Sources */,
 				8EB74BE01FE3728F0051259E /* SlideMenuViewController.m in Sources */,

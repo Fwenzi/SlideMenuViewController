@@ -74,7 +74,6 @@ static  SlideMenuManger *sharedInstance = nil;
     [self createRightVC];
     
     _home=[[UINavigationController alloc]initWithRootViewController:self.baseViewController];
-    
     [AppDelegate window].rootViewController=_home;
     
     if (!_panGestureRecognizer) {
@@ -175,7 +174,7 @@ static  SlideMenuManger *sharedInstance = nil;
         _blackView.alpha = 1;
     }];
 }
-
+//滑动事件
 -(void)handlePanAction:(UIPanGestureRecognizer *)sender{
     CGPoint translation = [sender translationInView:self.centerViewController.view];
     

@@ -39,6 +39,10 @@
     [self.view addSubview:moreButton];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
 -(void)showLeft{
     [[SlideMenuManger sharedInstance]showLeftView];
 //    SlideMenuViewController *vc = (SlideMenuViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;

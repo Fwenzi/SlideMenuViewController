@@ -8,6 +8,7 @@
 
 #import "LeftViewController.h"
 #import "SlideMenuManger.h"
+#import "NextViewController.h"
 
 @interface LeftViewController ()
 
@@ -32,8 +33,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
 -(void)showRight{
-    [[SlideMenuManger sharedInstance] showRightViewControllerAnimated:YES];
+    NextViewController *vc=[[NextViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
